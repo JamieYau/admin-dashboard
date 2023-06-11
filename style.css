@@ -10,11 +10,51 @@
     grid-template-rows: 1fr 6fr;
 }
 
-header {
+.header {
     grid-column: 2 / 3;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 3fr 2fr;
     grid-template-rows: 1fr 2fr;
+    grid-row-gap: 1.5rem;
+    padding: 1rem 2rem;
+}
+
+.search-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 1rem;
+}
+
+.title-container {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+}
+
+.title-container>.profile {
+    grid-column: 1 / 2;
+    grid-row: span 2;
+}
+
+.actions-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.actions-container>button {
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 2rem;
+    background-color: #1892D5;
+    color: white;
+    font-weight: bold;
 }
 
 .sidebar {
